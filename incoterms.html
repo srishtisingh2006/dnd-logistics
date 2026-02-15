@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Incoterms 2010 | D&D Logistics</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* TABLE STYLE */
+.incoterms-table-container {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th {
+  background: #f9fafb;
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+td {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f3f4f6;
+}
+
+.check-yes {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.check-no {
+  color: #dc2626;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-white border-b border-gray-200 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="logo_placeholder.png" class="h-12 w-auto">
+      <div>
+        <h1 class="text-xl font-bold text-gray-900">D&D Logistics</h1>
+        <p class="text-xs text-gray-500">Connecting Worldwide...</p>
+      </div>
+    </div>
+
+    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">
+      ← Back to Home
+    </a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="pt-32 pb-16 bg-blue-50 border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      Incoterms 2010 – <span class="text-blue-600">Global Trade Rules</span>
+    </h1>
+    <p class="text-gray-600 text-lg max-w-4xl leading-relaxed">
+      Incoterms (International Commercial Terms) are globally accepted trade rules published by the ICC. 
+      These standardized terms define responsibilities, costs, and risks between buyers and sellers.
+    </p>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-16">
+
+<section class="mb-20">
+  <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+    <i data-lucide="table" class="mr-3 text-blue-600"></i> Seller Responsibilities Matrix
+  </h2>
+
+  <div class="incoterms-table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Term</th>
+          <th>Loading on Transport</th>
+          <th>Export Declaration</th>
+          <th>Transport to Port</th>
+          <th>Unloading at Port</th>
+          <th>Loading in Port</th>
+          <th>Transport to Destination</th>
+          <th>Insurance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>EXW</td><td class="check-no">No</td><td class="check-no">No</td><td class="check-no">No</td><td class="check-no">No</td><td class="check-no">No</td><td class="check-no">No</td><td class="check-no">No</td></tr>
+        <tr><td>FOB</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-no">No</td><td class="check-no">No</td></tr>
+        <tr><td>CIF</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td></tr>
+        <tr><td>DDP</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-yes">Yes</td><td class="check-no">No</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-gray-500 text-sm mt-4 italic">
+    *This table highlights key transfer points. Specific nuances apply to each term.
+  </p>
+</section>
+
+<div class="grid md:grid-cols-3 gap-12">
+
+<div class="md:col-span-1 space-y-8">
+
+  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md">
+    <h3 class="text-blue-600 font-bold mb-4 flex items-center">
+      <i data-lucide="truck" class="mr-2 w-5 h-5"></i> Any Mode of Transport
+    </h3>
+    <ul class="space-y-2 text-gray-700">
+      <li><strong>EXW</strong> – Ex Works</li>
+      <li><strong>CPT</strong> – Carriage Paid To</li>
+      <li><strong>CIP</strong> – Carriage and Insurance Paid To</li>
+      <li><strong>DAT</strong> – Delivered at Terminal</li>
+      <li><strong>DAP</strong> – Delivered at Place</li>
+      <li><strong>DDP</strong> – Delivered Duty Paid</li>
+    </ul>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-md">
+    <h3 class="text-blue-600 font-bold mb-4 flex items-center">
+      <i data-lucide="ship" class="mr-2 w-5 h-5"></i> Sea & Waterway
+    </h3>
+    <ul class="space-y-2 text-gray-700">
+      <li><strong>FAS</strong> – Free Alongside Ship</li>
+      <li><strong>FOB</strong> – Free on Board</li>
+      <li><strong>CFR</strong> – Cost and Freight</li>
+      <li><strong>CIF</strong> – Cost, Insurance and Freight</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="md:col-span-2 space-y-12">
+
+<section>
+  <h2 class="text-2xl font-bold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4">
+    Detailed Explanation
+  </h2>
+
+  <div class="space-y-8 text-gray-700">
+
+    <div>
+      <h4 class="text-xl font-semibold text-gray-900 mb-2">EXW – Ex Works</h4>
+      <p>The seller makes the goods available at their premises. The buyer bears all costs and risks from that point onward.</p>
+    </div>
+
+    <div>
+      <h4 class="text-xl font-semibold text-gray-900 mb-2">DAT – Delivered at Terminal</h4>
+      <p>The seller delivers goods, unloaded, at a named terminal. Seller bears risks until unloading is complete.</p>
+    </div>
+
+    <div>
+      <h4 class="text-xl font-semibold text-gray-900 mb-2">DDP – Delivered Duty Paid</h4>
+      <p>The seller takes full responsibility including transport, clearance, and duties.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-blue-50 border border-blue-200 p-8 rounded-xl">
+  <h3 class="text-2xl font-bold text-gray-900 mb-6">
+    Why Choose D&D Logistics?
+  </h3>
+  <div class="grid sm:grid-cols-2 gap-4 text-gray-700">
+    <div class="flex items-start"><i data-lucide="check-circle" class="mr-2 text-blue-600"></i> Professional documentation</div>
+    <div class="flex items-start"><i data-lucide="check-circle" class="mr-2 text-blue-600"></i> Customs clearance support</div>
+    <div class="flex items-start"><i data-lucide="check-circle" class="mr-2 text-blue-600"></i> Multimodal freight solutions</div>
+    <div class="flex items-start"><i data-lucide="check-circle" class="mr-2 text-blue-600"></i> Insurance coordination</div>
+  </div>
+</section>
+
+</div>
+</div>
+</main>
+
+<footer class="bg-orange-100 border-t border-orange-200 py-10 text-center">
+  <p class="text-gray-700 text-sm">
+    © 2026 D&D Logistics | Global Trade Compliance Division
+  </p>
+</footer>
+
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

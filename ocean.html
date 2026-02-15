@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Freight | D&D Logistics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .nav-blur {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .hero-ocean {
+            background: linear-gradient(rgba(0, 26, 51, 0.7), rgba(0, 26, 51, 0.7)), 
+                        url('https://images.unsplash.com/photo-1494412519320-aa613dfb7738?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="fixed w-full z-50 nav-blur shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+
+                <div class="flex items-center space-x-3">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="logo_placeholder.png" alt="D&D Logo" class="h-12 w-auto">
+                        <div>
+                            <h1 class="text-xl font-bold text-gray-900">D&D Logistics</h1>
+                            <p class="text-xs text-gray-500">Connecting Worldwide...</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="hover:text-blue-500 transition">Home</a>
+                    <a href="index.html" class="hover:text-blue-500 transition">About Us</a>
+
+                    <div class="relative dropdown group">
+                        <button class="flex items-center hover:text-blue-500 transition py-7">
+                            Services <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                        </button>
+                        <div class="dropdown-menu hidden absolute left-0 w-64 bg-white border border-gray-200 rounded-lg shadow-lg mt-0">
+                            <a href="air freight.html" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-200">Air Freight</a>
+                            <a href="warehousing.html" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-200">Warehousing & Distribution</a>
+                            <a href="ocean.html" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-200">Ocean Freight</a>
+                            <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-200">Customs Clearance</a>
+                            <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-200">Cross Trade</a>
+                            <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-200">Project Forwarding</a>        
+                            <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600">Dangerous Goods</a>
+                        </div>
+                    </div>
+
+                    <div class="relative dropdown group">
+                        <button class="flex items-center hover:text-blue-500 transition py-7">
+                            Miscellaneous <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                        </button>
+                        <div class="dropdown-menu hidden absolute left-0 w-64 bg-white border border-gray-200 rounded-lg shadow-lg mt-0">
+                            <a href="incoterms.html" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-200">Incoterms</a>
+                            <a href="Container.html" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-200">Container Specs</a>
+                            <a href="https://web.trackload.com/calculator/#volumecalculator" target="_blank" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600">Volume Calculator</a>
+                        </div>
+                    </div>
+
+                    <div class="relative dropdown group">
+                        <button class="flex items-center hover:text-blue-500 transition py-7">
+                            Tracking <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                        </button>
+                        <div class="dropdown-menu hidden absolute left-0 w-64 bg-white border border-gray-200 rounded-lg shadow-lg mt-0">
+                            <a href="https://web.trackload.com/rapidtracktm/#airtracking" target="_blank" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600 border-b border-gray-200">Air Tracking</a>
+                            <a href="https://www.track-trace.com/container/#seatracking" target="_blank" class="block px-4 py-3 text-gray-800 hover:bg-blue-50 hover:text-blue-600">Sea Tracking</a>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded font-semibold transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-ocean h-[60vh] flex items-center justify-center text-center text-white">
+        <div class="mt-20 px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Ocean Freight Solutions</h1>
+            <p class="text-xl max-w-3xl mx-auto opacity-90">Reliable, cost-effective, and global sea transportation services for businesses of all sizes.</p>
+        </div>
+    </header>
+
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Global Sea Freight Specialists</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    D&D Logistics provides comprehensive ocean freight services through our global network of port agents and shipping lines. We handle everything from small LCL shipments to complex project cargo, ensuring your goods cross the oceans safely and on schedule.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-600">
+                        <h4 class="font-bold text-gray-800">FCL</h4>
+                        <p class="text-xs text-gray-500">Full Container Load</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-600">
+                        <h4 class="font-bold text-gray-800">LCL</h4>
+                        <p class="text-xs text-gray-500">Less than Container Load</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1570513813351-87179047f3f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Container Ship" class="rounded-2xl shadow-2xl">
+                <div class="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-xl hidden md:block">
+                    <p class="text-2xl font-bold">100+</p>
+                    <p class="text-sm">Global Ports Reached</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-24">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 section-card">
+                <div class="bg-blue-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                    <i data-lucide="anchor" class="text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Port-to-Port</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Direct shipping services between major global hubs with optimized transit times and competitive rates.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 section-card">
+                <div class="bg-blue-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                    <i data-lucide="truck" class="text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Door-to-Door</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Seamless integration of sea freight with inland trucking to deliver goods directly to your warehouse.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 section-card">
+                <div class="bg-blue-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                    <i data-lucide="file-text" class="text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Customs Support</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Complete handling of documentation, bill of lading, and port clearances to avoid delays.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-900 py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Our Infrastructure</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <img src="https://img.freepik.com/free-photo/yacht-reflection-sunset-harbour_1150-12670.jpg?semt=ais_user_personalization&w=740&q=80" alt="Harbor" class="rounded-lg h-64 w-full object-cover">
+                <img src="https://cargos.com/wp-content/uploads/2020/02/Cargo-Containers-scaled-1.jpg" alt="Cargo" class="rounded-lg h-64 w-full object-cover">
+                <img src="https://redstagfulfillment.b-cdn.net/wp-content/uploads/Cargo-Ship.jpg" alt="Shipment" class="rounded-lg h-64 w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <h2 class="text-2xl font-bold text-gray-900">D&D Logistics</h2>
+                <p class="text-gray-500 text-sm">Simplifying Global Trade Since 2026.</p>
+            </div>
+            <div class="flex space-x-6 text-gray-600">
+                <a href="#" class="hover:text-blue-600 transition">Air Freight</a>
+                <a href="#" class="hover:text-blue-600 transition">Ocean Freight</a>
+                <a href="#" class="hover:text-blue-600 transition">Tracking</a>
+            </div>
+        </div>
+        <div class="text-center mt-10 text-xs text-gray-400">
+            &copy; 2026 D&D Logistics. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

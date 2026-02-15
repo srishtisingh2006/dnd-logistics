@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Container Specifications | D&D Logistics</title>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f9fafb;
+}
+
+/* Navbar */
+.nav-blur {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Banner Strip */
+.banner-strip {
+  height: 35px;
+  background: url('banner.jpg') center/cover;
+  border-top: 2px solid #eee;
+}
+
+/* Breadcrumb */
+.breadcrumb-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Spec Section */
+.spec-sheet {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.spec-sheet h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #111827;
+  text-transform: uppercase;
+}
+
+.container-row {
+  display: flex;
+  margin-bottom: 40px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.img-col {
+  flex: 0 0 160px;
+  display: flex;
+  align-items: center;
+}
+
+.img-col img {
+  width: 100%;
+  height: auto;
+}
+
+.data-col {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.data-col h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #111827;
+  border-left: 4px solid #2563eb;
+  padding-left: 10px;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  gap: 15px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.spec-box strong,
+.stat-box strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.stat-box {
+  text-align: center;
+  border-left: 1px solid #e5e7eb;
+  padding-left: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 nav-blur shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-20 items-center">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="logo_placeholder.png" alt="D&D Logo" class="h-12 w-auto">
+        <div>
+          <h1 class="text-xl font-bold text-gray-900">D&D Logistics</h1>
+          <p class="text-xs text-gray-500">Connecting Worldwide...</p>
+        </div>
+      </div>
+
+      <!-- Menu -->
+      <div class="hidden md:flex space-x-8 items-center text-gray-700 font-medium">
+
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="white.html#about" class="hover:text-blue-600 transition">About Us</a>
+
+        <div class="relative dropdown group">
+          <button class="flex items-center hover:text-blue-600 transition py-7">
+            Services 
+            <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu hidden absolute left-0 w-64 bg-white border border-gray-200 rounded-lg shadow-lg">
+            <a href="air freight.html" class="block px-4 py-3 hover:bg-blue-50 hover:text-blue-600 border-b">Air Freight</a>
+            <a href="ocean.html" class="block px-4 py-3 hover:bg-blue-50 hover:text-blue-600 border-b">Ocean Freight</a>
+            <a href="#" class="block px-4 py-3 hover:bg-blue-50 hover:text-blue-600">Customs Clearance</a>
+          </div>
+        </div>
+
+        <div class="relative dropdown group">
+          <button class="flex items-center hover:text-blue-600 transition py-7">
+            Miscellaneous 
+            <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+          </button>
+          <div class="dropdown-menu hidden absolute left-0 w-64 bg-white border border-gray-200 rounded-lg shadow-lg">
+            <a href="incoterms.html" class="block px-4 py-3 hover:bg-blue-50 hover:text-blue-600 border-b">Incoterms</a>
+            <a href="Container.html" class="block px-4 py-3 hover:bg-blue-50 hover:text-blue-600">Container Specs</a>
+          </div>
+        </div>
+
+        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded transition">
+          Contact
+        </a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- SPACING FIX -->
+<div class="pt-24"></div>
+
+<div class="banner-strip"></div>
+
+<section class="breadcrumb-bar">
+  <h2 class="text-lg font-semibold text-gray-800">Container Specifications</h2>
+  <p class="text-sm text-gray-500">Home / <span class="text-blue-600">Container Specifications</span></p>
+</section>
+
+<main class="spec-sheet">
+
+<h1>Ocean Freight Container Specification Sheet</h1>
+
+<div class="container-row">
+  <div class="img-col"><img src="dry20.png" alt="20ft Dry"></div>
+  <div class="data-col">
+    <h3>20' Dry Van Container</h3>
+    <div class="spec-grid">
+      <div class="spec-box"><strong>Interior Dimensions</strong>Length: 5.897 m<br>Width: 2.348 m<br>Height: 2.385 m</div>
+      <div class="spec-box"><strong>Door Opening</strong>Width: 2.337 m<br>Height: 2.272 m</div>
+      <div class="stat-box"><strong>Tare Weight</strong>2,290 kg</div>
+      <div class="stat-box"><strong>Cubic Capacity</strong>33.00 m³</div>
+      <div class="stat-box"><strong>Max Payload</strong>21,710 kg</div>
+    </div>
+  </div>
+</div>
+
+<div class="container-row">
+  <div class="img-col"><img src="flat20.png" alt="20ft Flat"></div>
+  <div class="data-col">
+    <h3>20' Flat Rack Container</h3>
+    <div class="spec-grid">
+      <div class="spec-box"><strong>Interior Dimensions</strong>Length: 5.958 m<br>Width: 2.235 m<br>Height: 2.077 m</div>
+      <div class="spec-box"><strong>Door Opening</strong>Width: 2.337 m<br>Height: 2.272 m</div>
+      <div class="stat-box"><strong>Tare Weight</strong>2,330 kg</div>
+      <div class="stat-box"><strong>Cubic Capacity</strong>28.0 m³</div>
+      <div class="stat-box"><strong>Max Payload</strong>27,710 kg</div>
+    </div>
+  </div>
+</div>
+
+<div class="container-row">
+  <div class="img-col"><img src="dry40.png" alt="40ft Dry"></div>
+  <div class="data-col">
+    <h3>40' Dry Container</h3>
+    <div class="spec-grid">
+      <div class="spec-box"><strong>Interior Dimensions</strong>Length: 12.031 m<br>Width: 2.348 m<br>Height: 2.385 m</div>
+      <div class="spec-box"><strong>Door Opening</strong>Width: 2.337 m<br>Height: 2.272 m</div>
+      <div class="stat-box"><strong>Tare Weight</strong>3,770 kg</div>
+      <div class="stat-box"><strong>Cubic Capacity</strong>67.40 m³</div>
+      <div class="stat-box"><strong>Max Payload</strong>26,710 kg</div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>
